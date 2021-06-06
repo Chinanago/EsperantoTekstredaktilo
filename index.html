@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <h1 class="headline">Esperanto Tekstredakilo</h1>
+        <ul>
+            <li><input type="button" id="btn" class="btn" value="使い方/Kiel uzi" onclick="buttonClick()"></li>
+        </ul>
+        </header>
+        <div id="dialog">
+            <div id="dialogBackground"></div>
+            <div id="dialogContent">
+                <div id="dialogMsg">
+                    エスペラントを入力するためのシンプルなテキストエディタです。<br>
+                    'Ĉ'と入力したいときは、'C^'のように入力してください。<br>
+                    <br>
+                    Ĉi tio estas simpla tekstredaktilo por tajpi Esperanton.<br>
+                    Se vi volas tajpi 'Ĉ', tajpu ion kiel 'C^'.
+                </div>
+            <div id="btndiv">
+                <input type="button" value="OK" class="OK" onclick="dialogHide();" />
+            </div>
+            </div>
+        </div>
+    <div class="container">
+        <div class="item"><textarea id="text" name="text"></textarea></div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
